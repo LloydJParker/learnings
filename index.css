@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Gravitas+One&display=swap');
+
+body {
+  font-family: 'Gravitas One', cursive, sans-serif;
+  font-size: 14px;
+  color:#6e3d02;
+  background-color:#ffc20e;
+  padding-top:10%;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  font-family: 'Gravitas One', cursive, sans-serif;
+  color:#fff;
+  float: left;
+  font-size: 44px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #6e3d02;
+  border: 1px solid #ffc20e;
+  line-height: 68px;
+  height: 68px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 68px;
+  background-color:#ae812c;
+}
+
+.board-row:nth-child(even) .square:nth-child(odd),
+.board-row:nth-child(odd) .square:nth-child(even) {
+  background-color:#d1a238;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  width: 460px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.game-info button {
+  font-size:14px;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width:160px;
+  text-align: left;
+  padding: 8px 3px 6px 8px;
+  margin: 0 0 2% 0;
+  background-color: #fff;
+  border:0px;
+  border-radius: 4px;
+}
+
+.game-info button:hover {
+  background-color:#ffe6a6;
+}
+
+.game-info li:first-child button {
+  background-color: #673f13;
+  color:#fff;
+}
+
+.game-info li:first-child button:hover {
+  background-color: #4c2d0c;
+}
